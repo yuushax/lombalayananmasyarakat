@@ -9,6 +9,12 @@
   scroll-behavior: smooth;
 }
 
+.svg{
+  width: 28px;
+}
+
+
+
 :root {
   /* Color */
   --text: #0a0f0d;
@@ -84,7 +90,7 @@
 
 #home {
   position: relative;
-  height: 100dvh;
+  min-height: 100dvh;
   background: url(img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,6 +132,10 @@
   padding: 18px 36px;
   font-size: 1.2rem;
   align-self: flex-start;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-evenly;
   border-radius: var(--radius);
   font-weight: 600;
 }
@@ -166,17 +176,25 @@
     align-self: center;
 }
 
+select{
+  padding: 12px 24px;
+  background: #e8e8e8;
+  border: 0;
+  border-radius: var(--radius);
+  font-size: 1rem;
+}
+
 .pengajuan {
   display: grid;
   gap: 5px;
 }
 
 .pengajuan input {
-  background-color: var(--background);
-  border: 2px solid var(--text);
+  background-color: #e8e8e8;
+  border: 0;
   width: 100%;
   border-radius: var(--radius);
-  font-size: var(--p-text);
+  font-size: 1rem;
   padding: 12px 24px;
 }
 
@@ -191,7 +209,7 @@
 
 #about {
   position: relative;
-  height: 100dvh;
+  min-height: 100dvh;
   background: var(--background);
   display: flex;
   align-items: center;
@@ -213,7 +231,7 @@
 
 #blog {
   position: relative;
-  height: 100dvh;
+  min-height: 100dvh;
   background: var(--background);
   background-repeat: no-repeat;
   background-size: cover;
@@ -227,6 +245,10 @@
 #blog .heading-text{
     color: #000;
     text-align: center;
+}
+
+.text-black{
+  color: #000;
 }
 
 .blog-container {
@@ -260,6 +282,97 @@
 .blog-description {
   font-size: 0.9em;
   color: #666;
+}
+
+footer{
+  background-color: var(--primary);
+  display: flex;
+  padding: 2rem 10%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left-footer{
+  color: #fff;
+}
+
+.left-footer .desc, .mid-footer .desc{
+  color: #fff;
+}
+
+.mid-footer{
+  display: grid;
+  gap: 10px;
+  font-weight: 600;
+}
+
+.mid-footer div{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.mid-footer a{
+  color: #ffff;
+
+}
+
+.fade-left{
+  animation: fade-left linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+.fade-bottom{
+  animation: fade-bottom linear;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+.zoom-in{
+  animation: zoomIn;
+  animation-timeline: view();
+  animation-range: cover 0% cover 50%;
+}
+
+.reveal{
+  animation: reveal linear both;
+  animation-timeline: view();
+  animation-range: cover 0% cover 25%;
+}
+
+@keyframes fade-bottom {
+  0% {
+    transform: translateY(-50%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes reveal {
+  from{
+    opacity: 0;
+    clip-path: inset(50% 50% 50% 50%);
+  }
+  to{
+    opacity: 1;
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
+
+@keyframes zoomIn {
+  from{
+    transform: scale(0.3);
+    opacity: 0;
+  }
+  to{
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @keyframes fade-left {

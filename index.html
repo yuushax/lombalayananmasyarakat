@@ -28,20 +28,24 @@
           Berarti"
         </h1>
         <div class="btn-dual">
-          <a href="#about" class="btn btn-primary">Tentang Kami</a>
-          <a href="#blog" class="btn btn-secondary">Blog</a>
+          <a href="#about" class="btn btn-primary">Tentang Kami<img class="svg" src="icons/arrow-right.svg"></img></a>
+          <a href="#blog" class="btn btn-secondary">Blog<img class="svg" src="icons/globe.svg"></img></a>
         </div>
       </div>
       <div class="home-right">
-        <h1>Ini teks gatau isinya apaan nanti</h1>
+        <h1>Mari kita tunjukan bentuk kepedulian kita</h1>
         <div class="pengajuan">
           <label for="name">Nama</label>
           <input type"name" id="name" placeholder="Nama">
         </div>
-        <div class="pengajuan">
-          <label for="name">Nominal</label>
-          <input type"name" id="nominal" placeholder="Nominal uang yang disumbangkan">
-        </div>
+        
+      <select name="donation" id="donation">
+        <option value="Rp. 15.000">Rp. 15.000</option>
+        <option value="Rp. 25.000">Rp. 25.000</option>
+        <option value="Rp. 50.000">Rp. 50.000</option>
+        <option value="Rp. 100.000">Rp. 100.000</option>
+        <option value="Rp. 150.000">Rp. 150.000</option>
+      </select>
         <div class="pengajuan">
           <label for="pesan">Pesan</label>
           <input type"text" class="large-input" id="pesan" placeholder="Pesan">
@@ -51,9 +55,9 @@
     </section>
 
     <section id="about">
-      <div class="home-left">
+      <div class="home-left fade-left">
         <h1 style="color: #000" class="heading-text">
-          Komunitas terpercaya anti korupsi kayak pemerintah Indo
+          Komunitas terpercaya anti korupsi 
         </h1>
         <p class="desc">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt,
@@ -61,48 +65,62 @@
           animi aut facere non commodi minima tenetur molestiae sunt officiis,
           nihil, ipsa ab odit deleniti aperiam quis voluptates?
         </p>
-        <a href="" class="btn btn-primary">Help The Others</a>
+        <a href="#home" class="btn btn-primary">Help The Others</a>
       </div>
       <div class="about-right">
-        <img class="" src="img/01.png" alt="" />
+        <img class="zoom-in" src="img/01.png" alt="" />
       </div>
     </section>
 
     <section id="blog">
-      <h1 class="heading-text">Mari lihat apa saja yang berhasil kita lakukan</h1>
+      <h1 class="heading-text fade-bottom">Mari lihat apa saja yang berhasil kita lakukan</h1>
       <div class="blog-container">
-        <div class="blog-card">
+        <div class="blog-card reveal">
             <img src="img/bg-about.jpg" alt="Blog 1" class="blog-image">
             <h3 class="blog-title">Blog Post 1</h3>
             <p class="blog-description">This is a short description of the first blog post.</p>
         </div>
-        <div class="blog-card">
+        <div class="blog-card reveal">
             <img src="img/bg-about.jpg" alt="Blog 2" class="blog-image">
             <h3 class="blog-title">Blog Post 2</h3>
             <p class="blog-description">This is a short description of the second blog post.</p>
         </div>
-        <div class="blog-card">
+        <div class="blog-card reveal">
             <img src="img/bg-about.jpg" alt="Blog 3" class="blog-image">
             <h3 class="blog-title">Blog Post 3</h3>
             <p class="blog-description">This is a short description of the third blog post.</p>
         </div>
-        <div class="blog-card">
+        <div class="blog-card reveal">
             <img src="img/bg-about.jpg" alt="Blog 4" class="blog-image">
             <h3 class="blog-title">Blog Post 4</h3>
             <p class="blog-description">This is a short description of the fourth blog post.</p>
         </div>
-        <div class="blog-card">
+        <div class="blog-card reveal">
             <img src="img/bg-about.jpg" alt="Blog 4" class="blog-image">
             <h3 class="blog-title">Blog Post 5</h3>
             <p class="blog-description">This is a short description of the fourth blog post.</p>
         </div>
-        <div class="blog-card">
+        <div class="blog-card reveal">
             <img src="img/bg-about.jpg" alt="Blog 4" class="blog-image">
             <h3 class="blog-title">Blog Post 6</h3>
             <p class="blog-description">This is a short description of the fourth blog post.</p>
         </div>
     </div>
     </section>
+
+    <footer>
+      <div class="left-footer">
+        <h2 class="heading-text">Fundee</h2>
+        <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic minima voluptates quaerat magnam tenetur, eius labore numquam cumque. Repudiandae harum, rem ipsum facilis laboriosam commodi.</p>
+      </div>
+      <div class="mid-footer">
+        <p class="desc">Kontak Kami</p>
+        <div><img src="icons/facebook.svg" alt=""> <a href="#">Fundee</a></div>
+        <div><img src="icons/twitter.svg" alt=""> <a href="#">Fundee</a></div>
+        <div><img src="icons/phone.svg" alt=""> <a href="#">+6281111111</a></div>
+        <div><img src="icons/email.svg" alt=""> <a href="#">fundeecorp@fundee.com</a></div>
+      </div>
+    </footer>
 
     <script src="script.js"></script>
   </body>
