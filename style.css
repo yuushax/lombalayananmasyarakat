@@ -24,6 +24,10 @@
   width: 28px;
 }
 
+.blog-right{
+  position: absolute;
+  right: -50%;
+}
 
 
 :root {
@@ -103,7 +107,7 @@
 #home {
   position: relative;
   min-height: 100dvh;
-  background: url(img/bg.jpg);
+  background: url(img/bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -113,14 +117,6 @@
   z-index: 0;
 }
 
-/* Dark overlay */
-#home::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
 
 .home-left {
   display: flex;
@@ -227,7 +223,8 @@ select{
 #about {
   position: relative;
   min-height: 100dvh;
-  background: var(--background);
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -250,7 +247,7 @@ select{
 #blog {
   position: relative;
   min-height: 100dvh;
-  background: var(--background);
+
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -264,6 +261,7 @@ select{
     color: #000;
     text-align: center;
     font-size: 2.4rem;
+    margin-bottom: 3rem;
 }
 
 .text-black{
@@ -297,11 +295,11 @@ select{
 }
 .blog-title {
   margin: 15px 0 10px;
-  font-size: 1.2em;
+  font-size: 1.4em;
   color: #333;
 }
 .blog-description {
-  font-size: 0.9em;
+  font-size: 1em;
   color: #666;
 }
 
@@ -319,6 +317,8 @@ footer{
 
 .left-footer .desc{
   font-size: 1.2rem;
+  text-align: left;
+  width: 100%;
 }
 
 .left-footer .desc, .mid-footer .desc{
@@ -496,6 +496,17 @@ footer{
 .btn{
     align-self: center;
 }
+
+footer{
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-footer .desc{
+  display: none;
+}
+
+
 }
 
 
