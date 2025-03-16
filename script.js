@@ -37,4 +37,8 @@ document.addEventListener("DOMContentLoaded", () => {
     activateNav();
 });
 
+function showAlert() {
+    alert("Donasi berhasil dikirim");
+}
+
 

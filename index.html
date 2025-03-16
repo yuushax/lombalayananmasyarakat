@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav id="navbar">
-      <h1 class="logo">Suara Kita</h1>
+      <h1 class="logo">Fundee</h1>
       <ul class="nav-list" id="navList">
         <li class="nav-items"><a href="#home">Home</a></li>
         <li class="nav-items"><a href="#about">About</a></li>
@@ -36,21 +36,23 @@
         <h1>Mari kita tunjukan bentuk kepedulian kita</h1>
         <div class="pengajuan">
           <label for="name">Nama</label>
-          <input type"name" id="name" placeholder="Nama">
+          <input type="text" id="name" placeholder="Nama">
         </div>
-        
-      <select name="donation" id="donation">
-        <option value="Rp. 15.000">Rp. 15.000</option>
-        <option value="Rp. 25.000">Rp. 25.000</option>
-        <option value="Rp. 50.000">Rp. 50.000</option>
-        <option value="Rp. 100.000">Rp. 100.000</option>
-        <option value="Rp. 150.000">Rp. 150.000</option>
-      </select>
+        <div class="pengajuan">
+          <label for="donation">Berikan Donasi</label>
+          <select name="donation" id="donation">
+            <option value="Rp. 15.000">Rp. 15.000</option>
+            <option value="Rp. 25.000">Rp. 25.000</option>
+            <option value="Rp. 50.000">Rp. 50.000</option>
+            <option value="Rp. 100.000">Rp. 100.000</option>
+            <option value="Rp. 150.000">Rp. 150.000</option>
+          </select>
+        </div>
         <div class="pengajuan">
           <label for="pesan">Pesan</label>
-          <input type"text" class="large-input" id="pesan" placeholder="Pesan">
+          <textarea id="pesan" class="large-input" placeholder="Pesan"></textarea>
         </div>
-        <a href="#" class="btn btn-primary">Kirim Pengajuan</a>
+        <a href="#" onclick="showAlert()" class="btn btn-primary">Kirim Pengajuan</a>
       </div>
     </section>
 
